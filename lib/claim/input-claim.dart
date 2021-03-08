@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sp_adm/keuangan/iuran_anggota.dart';
+// import 'package:sp_adm/keuangan/iuran_anggota.dart';
 import 'package:sp_adm/home.dart';
 import 'package:sp_adm/marchandise/marchandise.dart';
+import 'package:sp_adm/playlist/playlist_home.dart';
 
 void main() {
   runApp(InputClaim());
@@ -278,7 +279,7 @@ class _InputClaimState extends State<InputClaim> {
                             onTap: () {
                               Navigator.pushReplacement(context,
                                   MaterialPageRoute(builder: (context) {
-                                return IuranAnggota();
+                                return PlaylistEdu();
                               }));
                             }))),
                 BottomNavigationBarItem(
