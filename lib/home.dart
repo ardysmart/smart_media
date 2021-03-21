@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sp_adm/claim/input-claim.dart';
+import 'package:sp_adm/marchandise/home_page.dart';
 // import 'package:sp_adm/keuangan/iuran_anggota.dart';
-import 'package:sp_adm/marchandise/marchandise.dart';
+// import 'package:sp_adm/marchandise/marchandise.dart';
 import 'package:sp_adm/playlist/playlist_home.dart';
 import 'package:sp_adm/sidebar.dart';
 import 'package:sp_adm/tabbar/basic.dart';
@@ -9,6 +10,7 @@ import 'package:sp_adm/tabbar/beranda.dart';
 import 'package:sp_adm/tabbar/forkom.dart';
 import 'package:sp_adm/tabbar/keuangan.dart';
 import 'package:sp_adm/tabbar/training.dart';
+// import 'package:sp_adm/marchandise/product_detail_page.dart';
 
 void main() {
   runApp(HomePage());
@@ -154,7 +156,7 @@ class _HomePageState extends State<HomePage> {
                             onTap: () {
                               Navigator.pushReplacement(context,
                                   MaterialPageRoute(builder: (context) {
-                                return MarchandisePage();
+                                return HomePageProduct();
                               }));
                             }))),
               ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:sp_adm/claim/camera.dart';
 // import 'package:sp_adm/keuangan/iuran_anggota.dart';
 import 'package:sp_adm/home.dart';
 import 'package:sp_adm/marchandise/marchandise.dart';
@@ -323,10 +324,10 @@ class _InputClaimState extends State<InputClaim> {
         floatingActionButton: FloatingActionButton(
           backgroundColor: Color(0XFF03203F),
           onPressed: () {
-            // Navigator.pushReplacement(context,
-            //     MaterialPageRoute(builder: (context) {
-            //   return HomePage();
-            // }));
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) {
+              return HomePage();
+            }));
           },
           tooltip: 'Increment',
           child: Icon(Icons.add),
