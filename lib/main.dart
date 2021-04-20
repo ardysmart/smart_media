@@ -25,6 +25,10 @@ class SpAdm extends StatefulWidget {
 }
 
 class _SpAdmState extends State<SpAdm> {
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  bool isLoading = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,6 +72,7 @@ class _SpAdmState extends State<SpAdm> {
                   child: Column(
                     children: [
                       TextField(
+                        controller: emailController,
                         cursorColor: Colors.white,
                         textAlign: TextAlign.center,
                         style: TextStyle(color: Colors.white),
@@ -87,6 +92,7 @@ class _SpAdmState extends State<SpAdm> {
                             hintStyle: TextStyle(color: Color(0xffffffff))),
                       ),
                       TextField(
+                        controller: passwordController,
                         cursorColor: Colors.white,
                         textAlign: TextAlign.center,
                         style: TextStyle(color: Colors.white),
